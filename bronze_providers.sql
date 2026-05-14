@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS providers_raw (
+CREATE TABLE providers_raw (
   provider_id       INT,
   name              STRING,
   location_city     STRING,
