@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS customers_raw (
+CREATE TABLE customers_raw (
   customer_id       INT,
   name              STRING,
   location_city     STRING,
