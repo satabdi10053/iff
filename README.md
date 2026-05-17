@@ -72,5 +72,19 @@ In a Databricks SQL warehouse or notebook:
 3. Run all **Silver** scripts:
    
 4. Run all **Gold** scripts:
+
+**Data Quality:**
+
+Null check in fact_sales:
+
+**Handling Test failure:**
+
+Investigate upstream:
+
+If IDs are missing in Bronze, check raw files and ingestion logic.
+
+Quarantine / exclude bad records:
+
+Create a separate “rejects” table
  
 
