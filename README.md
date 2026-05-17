@@ -50,15 +50,15 @@ It is designed to:
 
 ### 2.1. Upload data
 
-1. Upload the CSV files to DBFS or a mounted location, for example:
+1. Upload the CSV files to DBFS or a mounted location:
 
-   - dbfs:/mnt/raw/customers/
-   - dbfs:/mnt/raw/providers/
-   - dbfs:/mnt/raw/ingredients/
-   - dbfs:/mnt/raw/raw_materials/
-   - dbfs:/mnt/raw/flavours/
-   - dbfs:/mnt/raw/recipes/
-   - dbfs:/mnt/raw/sales_transactions/
+   - /mnt/raw/customers/
+   - /mnt/raw/providers/
+   - /mnt/raw/ingredients/
+   - /mnt/raw/raw_materials/
+   - /mnt/raw/flavours/
+   - /mnt/raw/recipes/
+   - /mnt/raw/sales_transactions/
 
 2. Adjust the `LOCATION` paths in the **Bronze** SQL files if needed.
 
