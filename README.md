@@ -1,6 +1,6 @@
-# IFF Taste – Data Engineer Hiring Task (Databricks Medallion)
+# IFF  – Data Engineer Hiring Task (Databricks Medallion)
 
-This repository implements a **Bronze–Silver–Gold** medallion architecture in **Databricks SQL** for the IFF Taste hiring task.
+This repository implements a **Bronze–Silver–Gold** medallion architecture in **Databricks SQL** for the IFF hiring task.
 
 It is designed to:
 
@@ -13,7 +13,7 @@ It is designed to:
 
 ### Catalogs and schemas
 
-- Catalog: `iff`
+- Catalog: iff
 - Schemas:
   - `iff.bronze` – raw ingested CSVs
   - `iff.silver` – cleaned
@@ -22,28 +22,27 @@ It is designed to:
 ###  model
 
 - **Bronze**
-  - `customers_raw`
-  - `providers_raw`
-  - `ingredients_raw`
-  - `raw_materials_raw`
-  - `flavours_raw`
-  - `recipes_raw`
-  - `sales_transactions_raw`
+  - customers_raw
+  - providers_raw
+  - ingredients_raw
+  - raw_materials_raw
+  - flavours_raw
+  - recipes_raw
+  - sales_transactions_raw
 
 - **Silver**
-  dim_customer`
-  dim _provider`
-  dim_raw_material`
-  dim_ingredient`
-  fact_inventory`
-  fact_recipe_component`
-  fact_sales`
+  dim_customer
+  dim _provider
+  dim_raw_material
+  dim_ingredient
+  fact_inventory
+  fact_recipe_component
+  fact_sales
 
 - **Gold**
-  provider_inventory_analysis`
-  recipe_drilldown`
-  
-  sales_performance_customer`
+  provider_inventory_analysis
+  recipe_drilldown  
+  sales_performance_customer
   
 ---
 
@@ -53,13 +52,13 @@ It is designed to:
 
 1. Upload the CSV files to DBFS or a mounted location, for example:
 
-   - `dbfs:/mnt/raw/customers/`
-   - `dbfs:/mnt/raw/providers/`
-   - `dbfs:/mnt/raw/ingredients/`
-   - `dbfs:/mnt/raw/raw_materials/`
-   - `dbfs:/mnt/raw/flavours/`
-   - `dbfs:/mnt/raw/recipes/`
-   - `dbfs:/mnt/raw/sales_transactions/`
+   - dbfs:/mnt/raw/customers/
+   - dbfs:/mnt/raw/providers/
+   - dbfs:/mnt/raw/ingredients/
+   - dbfs:/mnt/raw/raw_materials/
+   - dbfs:/mnt/raw/flavours/
+   - dbfs:/mnt/raw/recipes/
+   - dbfs:/mnt/raw/sales_transactions/
 
 2. Adjust the `LOCATION` paths in the **Bronze** SQL files if needed.
 
