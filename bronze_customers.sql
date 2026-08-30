@@ -1,3 +1,4 @@
+--create by Satabdi
 CREATE TABLE customers_raw (
   customer_id       INT,
   name              STRING,
